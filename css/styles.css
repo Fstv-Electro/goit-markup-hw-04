@@ -20,6 +20,21 @@ body {
 
 }
 
+/* захований текст */
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
 /* Властивості контейнерів */
 
 .container {
@@ -88,8 +103,8 @@ img {
     display: flex;
     padding: 0;
 }
-/* шапка */
 
+        /* шапка */
 
 
 .page-header ul{
@@ -97,6 +112,7 @@ img {
 }
 
 .page-header {
+    display: flex;
     border-bottom: 1px solid #ECECEC;
 }
 
@@ -144,8 +160,11 @@ img {
 }
 
 .link:hover,
-.link:focus{
+.link:focus,
+.icons:hover,
+.icons:focus {
     color: var(--btn-blue-color);
+    --color1:var(--btn-blue-color);
 }
 
 /* контакти */
@@ -168,12 +187,34 @@ img {
 }
 
 .contacts-header .link {
+    display: flex;
+    align-items: center;
     padding-top: 32px;
     padding-bottom: 32px;
 }
 
+/* Іконки */
 
-/* Герой чи баннер */
+.contacts-header .icons {
+    border: 0;
+    margin: 0;
+    margin-right: 10px;
+    padding: 0;
+    fill: currentColor;
+}
+
+
+.envelope {
+    width: 16px;
+    height: 12px;
+}
+
+.smartphone {
+    width: 10px;
+    height: 16px;
+}
+
+        /* Герой чи баннер */
 
 .hero {
     background-color: var(--bcg-black-color);
@@ -181,6 +222,11 @@ img {
     margin-right: auto;
     margin-left: auto;
     max-width: 1600px;
+
+    background-image: url('../images/hero.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .hero > .container {
@@ -226,9 +272,10 @@ img {
 .hero-btn:hover,
 .hero-btn:focus {
     cursor: pointer;
+    background-color: #188CE8;
 }
 
-/* Особливості компанії */
+        /* Особливості компанії */
 
 .features {
     padding-top: 94px;
@@ -243,7 +290,6 @@ img {
     width: 270px;
     margin-right: 30px;
 }
-
 
 .features .item:nth-child(4n){
     margin-right: 0px;
@@ -265,7 +311,18 @@ img {
     line-height: 1.71;
 }
 
-/* Чим ми займаємося */
+/* Особливості > зображення */
+
+.features-icons {
+    border: 0;
+    margin: 0;
+    margin-bottom: 30px;
+    padding: 25px 100px;
+    background-color: var(--bcg-grey-color);
+    width: 270px;
+    height: 120px;
+}
+        /* Чим ми займаємося */
 
 .work {
     padding-top: 94px;
@@ -294,7 +351,7 @@ img {
     display: block;
 }
 
-/* Команда*/
+        /* Команда*/
 
 .team {
     padding-top: 94px;
@@ -366,7 +423,7 @@ img {
 
 
 
-/* Підвал */
+        /* Підвал */
 
 .footer {
     background-color: var(--bcg-black-color);
@@ -397,7 +454,7 @@ img {
 
 
 
- /* ПОРТФОЛІО */
+         /* ПОРТФОЛІО */
 
 .portfolio {
     padding-top: 94px;
