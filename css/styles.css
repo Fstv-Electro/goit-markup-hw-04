@@ -221,9 +221,15 @@ img {
     padding: 200px 0;
     margin-right: auto;
     margin-left: auto;
+    height: 600px;
     max-width: 1600px;
 
-    background-image: url('../images/hero.jpg');
+    
+    background-image:linear-gradient(
+        to right,
+            rgba(0,0,0,0.4),
+            rgba(47, 48, 58, 0.4) 40%
+        ), url('../images/hero.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -410,7 +416,7 @@ img {
 .team p {
     font-size: 16px;
     line-height: 1.19;
-    padding-bottom: 30px;
+    margin-bottom: 16px;
     text-align: center;
 }
 
@@ -421,7 +427,42 @@ img {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+.socials {
+    padding: 0;
+    display: flex;
+    list-style: none;
+    margin: 0 32px;
+    padding-bottom: 30px;
+    justify-content: space-between;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 
+/* Іконки соціальної мережи команди */
+
+
+.socials-links {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border: 0;
+    border-radius: 50%;
+}
+
+.team .icons {
+    display: flex;
+    align-self: center;
+    width: 20px;
+    height: 20px;
+    margin: 12px;
+    fill: currentColor;
+}
+
+.socials-links:hover,
+.socials-links:focus {
+    background-color: var(--btn-blue-color);
+    --color2: var(--bcg-white-color);
+}
 
         /* Підвал */
 
