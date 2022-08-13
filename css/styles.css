@@ -416,8 +416,8 @@ img {
   padding: 0;
   display: flex;
   list-style: none;
-  margin: 0;
-  /* padding-bottom: 30px; */
+  margin: 0 32px;
+  padding-bottom: 30px;
   justify-content: space-between;
 }
 
@@ -429,6 +429,7 @@ img {
   height: 44px;
   border: 0;
   border-radius: 50%;
+  fill: currentColor;
 }
 
 .team .icons {
@@ -443,7 +444,7 @@ img {
 .socials-links:hover,
 .socials-links:focus {
   background-color: var(--btn-blue-color);
-  --color2: var(--bcg-white-color);
+  color: var(--bcg-white-color);
 }
 
 /* Клієнти */
@@ -473,9 +474,9 @@ img {
 
   width: 170px;
   height: 92px;
-  fill: currentColor;
   color: #afb1b8;
   border: 1px solid #afb1b8;
+  fill: currentColor;
   border-radius: 4px;
   cursor: pointer;
 }
@@ -484,15 +485,14 @@ img {
   fill: currentColor;
 }
 
-.clients-box .clients-link:focus .icons {
-  color: var(--btn-blue-color);
-  border-color: var(--btn-blue-color);
-}
 
+.clients-box .clients-link:focus,
 .clients-box .clients-link:hover {
   color: var(--btn-blue-color);
   border-color: var(--btn-blue-color);
 }
+
+
 
 /* Підвал */
 
@@ -538,6 +538,10 @@ img {
 
 .footer .submit {
   padding-top: 12px;
+}
+
+.submit .socials {
+  margin: 0;
 }
 
 .submit .socials-links {
