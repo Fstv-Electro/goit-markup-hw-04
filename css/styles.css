@@ -458,16 +458,16 @@ img {
   margin-bottom: 50px;
 }
 
-.clients-box {
+.clients-list {
   display: flex;
   justify-content: center;
 }
 
-.clients-box > .item:not(:last-child) {
+.clients-list > .item:not(:last-child) {
   margin-right: 30px;
 }
 
-.clients-box .clients-link {
+.clients-list .clients-link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -485,14 +485,11 @@ img {
   fill: currentColor;
 }
 
-
-.clients-box .clients-link:focus,
-.clients-box .clients-link:hover {
+.clients-list .clients-link:focus,
+.clients-list .clients-link:hover {
   color: var(--btn-blue-color);
   border-color: var(--btn-blue-color);
 }
-
-
 
 /* Підвал */
 
@@ -581,7 +578,7 @@ img {
   --color1: var(--bcg-white-color);
 }
 
-.join {
+.submit-title {
   margin: 0;
   margin-bottom: 20px;
 
