@@ -309,10 +309,16 @@ img {
 
 /* Особливості > зображення */
 
+.icon-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
 .features-icons {
   border: 0;
   margin: 0;
-  margin-bottom: 30px;
   padding: 25px 100px;
   background-color: var(--bcg-grey-color);
   width: 270px;
@@ -425,6 +431,8 @@ img {
 
 .socials-links {
   display: flex;
+  align-items: center;
+  justify-content: center;
   width: 44px;
   height: 44px;
   border: 0;
@@ -437,7 +445,6 @@ img {
   align-self: center;
   width: 20px;
   height: 20px;
-  margin: 12px;
   fill: currentColor;
 }
 
@@ -509,7 +516,7 @@ img {
   display: flex;
 }
 
-.footer li:not(:last-child) {
+.footer .logo-address li:not(:last-child) {
   margin-bottom: 9px;
 }
 
@@ -539,6 +546,7 @@ img {
 
 .submit .socials {
   margin: 0;
+  padding-bottom: 0;
 }
 
 .submit .socials-links {
@@ -565,6 +573,10 @@ img {
 .submit .item:not(:last-child) {
   margin-top: 0;
   margin-right: 10px;
+}
+
+.submit .item {
+  margin: 0;
 }
 
 .socials-links .icons {
@@ -653,6 +665,10 @@ img {
   margin-bottom: 30px;
 }
 
+.link-card {
+  text-decoration: none;
+}
+
 .card {
   border: 1px solid #eeeeee;
   padding: 20px 24px;
@@ -662,6 +678,8 @@ img {
 .card p {
   font-size: 16px;
   line-height: 1.88;
+  text-decoration: none;
+  color: var(--text-color);
 }
 
 .portfolio-title {
