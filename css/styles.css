@@ -150,17 +150,11 @@ img {
 
 .link {
   text-decoration: none;
-  color: var(--text-color);
-  fill:currentColor
 }
 
-.link:hover,
-.link:focus,
-.icons:hover,
-.icons:focus {
+.contacts-header .link:hover,
+.contacts-header .link:focus {
   color: var(--btn-blue-color);
-  fill: var(--bcg-white-color);
-  --color4: var(--btn-blue-color);
 }
 
 /* контакти */
@@ -186,6 +180,7 @@ img {
   align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
+  color: var(--text-color);
 }
 
 /* Іконки */
@@ -198,17 +193,7 @@ img {
   fill: currentColor;
 }
 
-.envelope {
-  width: 16px;
-  height: 12px;
-}
-
-.smartphone {
-  width: 10px;
-  height: 16px;
-}
-
-/* Герой чи баннер */
+    /* Герой чи баннер */
 
 .hero {
   background-color: var(--bcg-black-color);
@@ -442,10 +427,10 @@ img {
   height: 44px;
   border: 0;
   border-radius: 50%;
-  fill: currentColor;
+  color: #AFB1B8;
 }
 
-.team .icons {
+.socials-links .icons {
   display: flex;
   align-self: center;
   width: 20px;
@@ -488,13 +473,11 @@ img {
   height: 92px;
   color: #afb1b8;
   border: 1px solid #afb1b8;
-  fill: currentColor;
   border-radius: 4px;
   cursor: pointer;
 }
 
-.clients .icons {
-  color: #afb1b8;
+.clients-link .icons {
   fill: currentColor;
 }
 
@@ -546,6 +529,11 @@ img {
   color: rgba(255, 255, 255, 0.6);
 }
 
+.contacts-footer:hover,
+.contacts-footer:focus {
+  color: rgba(255,255,255,1);
+}
+
 .footer .submit {
   padding-top: 12px;
 }
@@ -568,9 +556,10 @@ img {
   border-radius: 50%;
 
   background-color: rgba(255, 255, 255, 0.1);
-  color: var(--text-color);
-  fill: currentColor;
+  color: var(--bcg-white-color);
 }
+
+
 
 .submit .socials-links:hover,
 .submit .socials-links:focus {
@@ -586,10 +575,9 @@ img {
   margin: 0;
 }
 
-.socials-links .icons {
+.submit .socials-links .icons {
   width: 20px;
   height: 20px;
-  color: var(--text-color);
   fill: currentColor;
 }
 
@@ -662,8 +650,7 @@ img {
 
 .portfolio .item:hover,
 .portfolio .item:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio .item:not(:nth-child(3n)) {
@@ -677,6 +664,11 @@ img {
 .link-card {
   text-decoration: none;
 }
+
+/* .link-card:hover,
+.link-card:focus {
+
+} */
 
 .card {
   border: 1px solid #eeeeee;
