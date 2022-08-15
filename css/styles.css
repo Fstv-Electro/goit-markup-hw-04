@@ -153,7 +153,9 @@ img {
 }
 
 .contacts-header .link:hover,
-.contacts-header .link:focus {
+.contacts-header .link:focus,
+.page-header .link:hover,
+.page-header .link:focus {
   color: var(--btn-blue-color);
 }
 
