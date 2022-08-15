@@ -151,6 +151,7 @@ img {
 .link {
   text-decoration: none;
   color: var(--text-color);
+  fill:currentColor
 }
 
 .link:hover,
@@ -158,7 +159,7 @@ img {
 .icons:hover,
 .icons:focus {
   color: var(--btn-blue-color);
-  --color1: var(--btn-blue-color);
+  fill: var(--bcg-white-color);
   --color4: var(--btn-blue-color);
 }
 
@@ -314,15 +315,19 @@ img {
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
+  width: 270px;
+  height: 120px;
+  background-color: var(--bcg-grey-color);
+  color: var(--text-h-color);
 }
 
 .features-icons {
   border: 0;
   margin: 0;
-  padding: 25px 100px;
-  background-color: var(--bcg-grey-color);
-  width: 270px;
-  height: 120px;
+
+  width: 70px;
+  height: 70px;
+  fill:currentColor
 }
 /* Чим ми займаємося */
 
@@ -489,6 +494,7 @@ img {
 }
 
 .clients .icons {
+  color: #afb1b8;
   fill: currentColor;
 }
 
@@ -562,7 +568,8 @@ img {
   border-radius: 50%;
 
   background-color: rgba(255, 255, 255, 0.1);
-  --color1: var(--bcg-white-color);
+  color: var(--text-color);
+  fill: currentColor;
 }
 
 .submit .socials-links:hover,
@@ -582,12 +589,14 @@ img {
 .socials-links .icons {
   width: 20px;
   height: 20px;
+  color: var(--text-color);
   fill: currentColor;
 }
 
 .socials-links .icons:hover,
 .socials-links .icons:focus {
-  --color1: var(--bcg-white-color);
+  color: var(--bcg-white-color);
+
 }
 
 .submit-title {
